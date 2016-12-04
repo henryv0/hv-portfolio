@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:300,400,700');
+
+
+// Imports
+@import 'reset';
+@import 'variables';
+@import 'typography';
+@import 'grid';
+
+body {
+
+  // background: gray;
+  // min-height: 100vh;
+  // position: relative;
+  // margin: 0;
+}
+
+.header-bg {
+  // min-height: 100vh;
+  // background: url('http://placehold.it/5000x1500');
+  // background-repeat: no-repeat;
+  // background-size: auto;
+  // background-position: center;
+}
+
+#profile-pic {
+  height: 300px;
+  border-radius: 100%;
+  margin: 2rem auto 0;
+}
+
+.hero {
+
+
+  // background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='anchors-away' fill='%23d2ac1c' fill-opacity='0.64'%3E%3Cpath d='M12.392 14v15.95c-3.278-.325-6.09-2.233-7.66-4.95l3.464-2L0 20.804 2.885 25.8C4.93 29.498 8.87 32 13.392 32c4.524 0 8.463-2.503 10.508-6.2l2.885-4.996L18.588 23l3.466 2c-1.57 2.717-4.384 4.625-7.662 4.95V14h5v-2h-5V7.874c1.726-.444 3-2.01 3-3.874 0-2.21-1.79-4-4-4s-4 1.79-4 4c0 1.864 1.275 3.43 3 3.874V12h-5v2h5zm1-8c1.105 0 2-.895 2-2s-.895-2-2-2c-1.104 0-2 .895-2 2s.896 2 2 2zm39 48v15.95c-3.278-.325-6.09-2.233-7.66-4.95l3.464-2L40 60.804l2.885 4.997C44.93 69.498 48.87 72 53.392 72c4.524 0 8.463-2.503 10.508-6.2l2.885-4.996L58.588 63l3.466 2c-1.57 2.717-4.384 4.625-7.662 4.95V54h5v-2h-5v-4.126c1.726-.444 3-2.01 3-3.874 0-2.21-1.79-4-4-4s-4 1.79-4 4c0 1.864 1.275 3.43 3 3.874V52h-5v2h5zm1-8c1.105 0 2-.895 2-2s-.895-2-2-2c-1.104 0-2 .895-2 2s.896 2 2 2zm-40 14c1.105 0 2-.895 2-2s-.895-2-2-2c-1.104 0-2 .895-2 2s.896 2 2 2zm40-40c1.105 0 2-.895 2-2s-.895-2-2-2c-1.104 0-2 .895-2 2s.896 2 2 2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  padding: 2rem 1.5rem;
+  // min-height: 100vh;
+  position: relative;
+
+  &__headline {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.portfolio {
+  margin-top: 2rem;
+}
+
+.portfolio-piece {
+  padding: 1rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
+  &__title {
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+  &__title, &__tags {
+    text-shadow: 0 2px 2px rgba(0,0,0,0.6);
+  }
+}
+
+#blog {
+  padding: 2rem 0;
+  background-color: yellow;
+}
+
+.blog {
+  &__article-title {
+    margin: 2rem 0 0.5rem 0;
+    &:first-of-type {margin-top: 1.5rem;}
+  }
+
+  &__article-link {color: $text-color;}
+}
+
+.button {
+  color: white;
+  background: $link-color;
+  box-shadow: 0 5px darken($link-color, 10%);
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all .25s ease-in-out;
+}
+
+.contact {
+  background-color: $text-color;
+  color: white;
+  padding: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column nowrap;
+
+  &__social {
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    width: 100%;
+    max-width: 18rem;
+    flex-grow: 1;
+  }
+
+  // &__button {
+  //   max-width: 18rem;
+  //   flex-grow: 1;
+  // }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+
+  &__button {
+    margin: 0 0.8rem;
+    font-size: 1.5rem;
+    color:white;
+
+    &:hover {color: $link-color;}
+  }
+}
